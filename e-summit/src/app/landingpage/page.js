@@ -12,6 +12,9 @@ export default function landing() {
         backgroundSize: "100% auto",
       }}
     >
+      <div className="absolute left-0 m-16">
+        <Image src="/esummit.png" width={100} height={100}></Image>
+      </div>
       <div class="grid h-screen place-items-center text-white">
         <Fade left>
           <h1 class="font-bold mt-64">
