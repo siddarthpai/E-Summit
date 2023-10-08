@@ -17,7 +17,8 @@ export default function landing() {
           <h1 class="font-bold mt-64">
             IDEATE.&ensp; INNOVATE. &ensp;INCUBATE.{" "}
           </h1>
-          <h1 class="font-bold text-7xl mb-64">E-Club x E-Summit </h1>
+          <h1 class="font-bold text-7xl mb-64">E-Club x E-Cell </h1>
+          <h1 className="font-bold text-4xl mb-32">E-Summit 23'</h1>
         </Fade>
       </div>
 
