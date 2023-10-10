@@ -5,8 +5,8 @@ import { Fade } from "react-reveal";
 export default function landing() {
   const externalImage = "https://i.imgur.com/JeKbrbt.jpg";
   return (
-    <div
-      class="h-screen bg-fixed"
+    <div id = "landing"
+      className="h-screen bg-fixed"
       style={{
         backgroundImage: `url(${externalImage})`,
         backgroundSize: "100% auto",
@@ -25,13 +25,13 @@ export default function landing() {
         </Fade>
       </div>
 
-      <div className="rotate-90 absolute bottom-28 right-0  ">
+      {/* <div className="rotate-90 absolute bottom-28 right-0  ">
         <div className="animate-bounce ">
           <span className="animate-bounce text-white  uppercase tracking-widest text-xl whitespace-nowrap ">
             Scroll Down ↠{" "}
           </span>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

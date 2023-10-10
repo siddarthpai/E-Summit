@@ -5,7 +5,7 @@ import Fade from "react-reveal/Fade";
 class About extends React.Component {
   render() {
     return (
-      <div className="grid h-screen place-items-center ">
+      <div className="grid h-screen place-items-center " id = "About">
         <Fade left>
           <h1 className="font-bold text-8xl">What Happens When</h1>
           <h1 className="font-bold text-6xl">
