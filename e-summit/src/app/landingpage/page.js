@@ -1,8 +1,24 @@
 "use client";
 import Image from "next/image";
 import React from "react";
-import { Fade } from "react-reveal";
+import { Fade, Rotate, Zoom } from "react-reveal";
+import Social from "../social/Socialicons";
+import { BsInstagram } from "react-icons/bs";
+import { AiOutlineLinkedin } from "react-icons/ai";
+import { useState } from "react";
+
 export default function landing() {
+  const [showInstaLinks, setShowInstaLinks] = useState(false);
+  const [showLinkedInLinks, setShowLinkedInLinks] = useState(false);
+
+  const handleInstaClick = () => {
+    setShowInstaLinks(!showInstaLinks);
+  };
+
+  const handleLinkedInClick = () => {
+    setShowLinkedInLinks(!showLinkedInLinks);
+  };
+
   return (
     <div class="h-screen bg-fixed">
       <div className="absolute left-0 m-16">
@@ -22,6 +38,42 @@ export default function landing() {
             <h1 className="font-bold text-7xl mb-64"> E-Summit 23'</h1>
           </div>
         </Fade>
+      </div>
+      <div className="absolute bottom-28 left-0 text-white ml-8 p-5">
+        <div className="mb-5">
+          <Zoom top left opposite cascade>
+            <div onClick={handleInstaClick}>
+              <BsInstagram size={40} />
+            </div>
+          </Zoom>
+          {showInstaLinks && (
+            <Rotate top left cascade>
+              <div className="flex flex-col font-bold">
+                <a href="https://instagram.com" className="mt-2 mb-5">
+                  E-Club PESU-ECC Instagram
+                </a>
+                <a href="https://instagram.com">E-Cell PESU-RR Instagram</a>
+              </div>
+            </Rotate>
+          )}
+        </div>
+        <div>
+          <Zoom top left opposite cascade>
+            <div onClick={handleLinkedInClick}>
+              <AiOutlineLinkedin size={45} />
+            </div>
+          </Zoom>
+          {showLinkedInLinks && (
+            <Rotate top left cascade>
+              <div className="flex flex-col font-bold ">
+                <a href="https://linkedin.com" className="mt-2 mb-5">
+                  E-Club PESU-ECC LinkedIn
+                </a>
+                <a href="https://linkedin.com">E-Cell PESU-RR LinkedIn</a>
+              </div>
+            </Rotate>
+          )}
+        </div>
       </div>
 
       <div className="rotate-90 absolute bottom-28 right-0  ">
