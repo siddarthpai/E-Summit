@@ -21,25 +21,25 @@ export default function landing() {
   };
 
   return (
-    <div class="h-screen bg-fixed">
+    <div className="h-screen">
       <div id="navbar" className="grid grid-cols-2">
         <div className="absolute left-0 m-16">
           <div className="grid grid-cols-3 gap-2">
             <Image
               src="/ecell.png"
-              className="w-16 h-16 lg:w-20 lg:h-24"
+              className="w-16 h-20 lg:w-20 lg:h-24"
               width={100}
               height={100}
             />
             <Image
               src="/cross.png"
-              className="w-16 h-12 lg:w-24 lg:h-16 "
+              className="w-20 h-12 lg:w-24 lg:h-16 "
               width={100}
               height={100}
             />
             <Image
               src="/eclub.png"
-              className="w-16 h-16 lg:w-24 lg:h-20"
+              className="w-20 h-16 lg:w-24 lg:h-20"
               width={100}
               height={100}
             />
@@ -49,7 +49,7 @@ export default function landing() {
           <nav>
             <section className="MOBILE-MENU flex  ">
               <div
-                className="HAMBURGER-ICON space-y-2 absolute right-0 mr-32 mt-24"
+                className="HAMBURGER-ICON space-y-2 absolute right-0 mr-4 mt-20  lg:mr-32 lg:mt-24"
                 onClick={() => setIsNavOpen((prev) => !prev)}
               >
                 <span className="block h-0.5 w-8 animate-pulse bg-white"></span>
@@ -129,20 +129,24 @@ export default function landing() {
         `}</style>
         </div>
       </div>
-
-      <div class="grid h-screen place-items-center text-white">
+      {/* End of Navbar section */}
+      <div id="center-text" class="grid h-screen place-items-center text-white">
         <Fade left>
-          <div className="grid h-screen m-40 place-items-center text-white ">
+          <div className="grid h-screen mt-40 lg:m-40 place-items-center text-white ">
             <Image src="/esummit.png" width={100} height={100}></Image>
-            <h1 className="font-bold text-7xl mb-64"> E-Summit 23'</h1>
+            <h1 className="font-bold text-4xl mb-72 md:text-5xl lg:text-7xl lg:mb-64">
+              {" "}
+              E-Summit 23'
+            </h1>
           </div>
         </Fade>
       </div>
+      {/* End of center of landing page */}
       <div
         id="socials"
-        className="absolute bottom-28 left-0 text-white ml-8 p-5"
+        className="left-0 text-white ml-8 gap-3 absolute bottom-0 lg:bottom-28 grid-rows-2 "
       >
-        <div className="mb-5">
+        <div id="insta" className="mb-5">
           <Zoom top left opposite cascade>
             <div onClick={handleInstaClick}>
               <BsInstagram size={40} />
@@ -159,7 +163,7 @@ export default function landing() {
             </Rotate>
           )}
         </div>
-        <div>
+        <div id="linkedin">
           <Zoom top left opposite cascade>
             <div onClick={handleLinkedInClick}>
               <AiOutlineLinkedin size={45} />
@@ -177,8 +181,8 @@ export default function landing() {
           )}
         </div>
       </div>
-
-      <div className="rotate-90 absolute bottom-28 right-0  ">
+      {/* End of Socials divison */}
+      <div className="hidden lg:block lg:rotate-90 absolute bottom-28 right-0  ">
         <div className="animate-bounce ">
           <span className="animate-bounce text-white  uppercase tracking-widest text-xl whitespace-nowrap ">
             Scroll Down ↠{" "}
@@ -186,5 +190,9 @@ export default function landing() {
         </div>
       </div>
     </div>
+
+    // <div class="h-screen bg-fixed">
+
+    // </div>
   );
 }
