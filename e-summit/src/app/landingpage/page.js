@@ -133,7 +133,7 @@ export default function landing() {
       <div id="center-text" class="grid h-screen place-items-center text-white">
         <Fade left>
           <div className="grid h-screen mt-40 lg:m-40 place-items-center text-white ">
-            <Image src="/esummit.png" width={100} height={100}></Image>
+            <Image src="/esummit.png" width={200} height={200}></Image>
             <h1 className="font-bold text-4xl mb-72 md:text-5xl lg:text-7xl lg:mb-64">
               {" "}
               E-Summit 23'
