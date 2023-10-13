@@ -24,7 +24,26 @@ export default function landing() {
     <div class="h-screen bg-fixed">
       <div id="navbar" className="grid grid-cols-2">
         <div className="absolute left-0 m-16">
-          <Image src="/esummit.png" width={100} height={100}></Image>
+          <div className="grid grid-cols-3 gap-2">
+            <Image
+              src="/ecell.png"
+              className="w-16 h-16 lg:w-20 lg:h-24"
+              width={100}
+              height={100}
+            />
+            <Image
+              src="/cross.png"
+              className="w-16 h-12 lg:w-24 lg:h-16 "
+              width={100}
+              height={100}
+            />
+            <Image
+              src="/eclub.png"
+              className="w-16 h-16 lg:w-24 lg:h-20"
+              width={100}
+              height={100}
+            />
+          </div>
         </div>
         <div className="flex items-center justify-between ">
           <nav>
@@ -113,20 +132,16 @@ export default function landing() {
 
       <div class="grid h-screen place-items-center text-white">
         <Fade left>
-          <div className="grid h-screen place-items-center text-white">
-            <h1 class="font-bol text-2xl mt-64">
-              IDEATE.&ensp; INNOVATE. &ensp;INCUBATE.{" "}
-            </h1>
-            <div className="grid grid-cols-3 gap-2">
-              <Image src="/ecell.png" width={100} height={100} />
-              <Image src="/cross.png" width={100} height={100} />
-              <Image src="/eclub.png" width={100} height={100} />
-            </div>
+          <div className="grid h-screen m-40 place-items-center text-white ">
+            <Image src="/esummit.png" width={100} height={100}></Image>
             <h1 className="font-bold text-7xl mb-64"> E-Summit 23'</h1>
           </div>
         </Fade>
       </div>
-      <div className="absolute bottom-28 left-0 text-white ml-8 p-5">
+      <div
+        id="socials"
+        className="absolute bottom-28 left-0 text-white ml-8 p-5"
+      >
         <div className="mb-5">
           <Zoom top left opposite cascade>
             <div onClick={handleInstaClick}>
