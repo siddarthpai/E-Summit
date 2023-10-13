@@ -16,7 +16,7 @@ class About extends React.Component {
             Entrepreneurial Clubs
           </h1>
           <h1></h1>
-          <h1 className="font-bold  hover:text-red-500 text-3xl mb-16 md:text-5xl lg:text-7xl">
+          <h1 className="font-bold  hover:text-red-500 text-3xl mb-8 md:text-5xl lg:text-7xl">
             <i>Join Hands?</i>
           </h1>
         </Fade>
