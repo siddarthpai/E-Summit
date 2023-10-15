@@ -22,10 +22,7 @@ export default function RootLayout({ children }) {
         {isLoading && isHome ? (
           <Splash finishLoading={() => setIsLoading(false)} />
         ) : (
-          <>
-            <Background />
-            {children}
-          </>
+          <>{children}</>
         )}
       </body>
     </html>
