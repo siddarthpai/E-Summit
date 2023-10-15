@@ -25,24 +25,14 @@ export default function landing() {
       <div id="navbar" className="grid grid-cols-2">
         <div className="absolute left-0 m-16">
           <div className="grid grid-cols-3 gap-2">
-            <Image
-              src="/ecell.png"
-              className="w-16 h-20 lg:w-20 lg:h-24"
-              width={100}
-              height={100}
-            />
-            <Image
-              src="/cross.png"
-              className="w-20 h-12 lg:w-24 lg:h-16 "
-              width={100}
-              height={100}
-            />
-            <Image
-              src="/eclub.png"
-              className="w-20 h-16 lg:w-24 lg:h-20"
-              width={100}
-              height={100}
-            />
+          <div class="flex items-center space-x-2 sm:space-x-4 lg:space-x-6">
+  <img src="/ecell.png" class="w-12 h-16 sm:w-16 sm:h-20 lg:w-20 lg:h-24" width="80" height="80" />
+  <img src="/cross.png" class="w-14 h-10 sm:w-16 sm:h-12 lg:w-20 lg:h-16" width="80" height="80" />
+  <img src="/eclub.png" class="w-14 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20" width="80" height="80" />
+</div>
+
+
+
           </div>
         </div>
         <div className="flex items-center justify-between ">
