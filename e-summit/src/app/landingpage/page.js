@@ -144,7 +144,8 @@ export default function landing() {
       {/* End of center of landing page */}
       <div
         id="socials"
-        className="left-0 text-white ml-8 gap-3 absolute bottom-0 lg:bottom-28 grid-rows-2 "
+        // className="left-0 text-white ml-8 gap-3 absolute bottom-0 lg:bottom-28 grid-rows-2 " // desktop only
+        className= "onlySmall:left-1/4 left-0 text-white ml-8 onlySmall:gap-7 gap-3 absolute bottom-0 lg:bottom-28 onlySmall:grid onlySmall:grid-cols-2 lg:grid-rows-2 "
       >
         <div id="insta" className="mb-5">
           <Zoom top left opposite cascade>
@@ -155,10 +156,16 @@ export default function landing() {
           {showInstaLinks && (
             <Rotate top left cascade>
               <div className="flex flex-col font-bold">
-                <a href="https://instagram.com" className="mt-2 mb-5">
-                  E-Club PESU-ECC Instagram
+                <a href="https://www.instagram.com/entrepreneurshipclub.pes/" 
+                  target="_blank" rel="noopener noreferrer" 
+                  className="mt-2 mb-5"
+                  >
+                  E-Club
                 </a>
-                <a href="https://instagram.com">E-Cell PESU-RR Instagram</a>
+                <a href="https://www.instagram.com/pes_ecell/"
+                  target="_blank" rel="noopener noreferrer"
+                >E-Cell
+                </a>
               </div>
             </Rotate>
           )}
@@ -172,10 +179,17 @@ export default function landing() {
           {showLinkedInLinks && (
             <Rotate top left cascade>
               <div className="flex flex-col font-bold ">
-                <a href="https://linkedin.com" className="mt-2 mb-5">
-                  E-Club PESU-ECC LinkedIn
+                <a href="https://www.linkedin.com/company/the-entrepreneurship-club-of-pes-university/" 
+                className="mt-2 mb-5"
+                target="_blank" rel="noopener noreferrer"
+                >
+                  E-Club
                 </a>
-                <a href="https://linkedin.com">E-Cell PESU-RR LinkedIn</a>
+                <a href="https://www.linkedin.com/company/pes-ecell/"
+                  target="_blank" rel="noopener noreferrer"
+                >
+                  E-Cell
+                </a>
               </div>
             </Rotate>
           )}
@@ -189,6 +203,22 @@ export default function landing() {
           </span>
         </div>
       </div>
+
+      <style>{`
+      .social_style {
+
+        left-0 
+        text-white 
+        ml-8 gap-3 
+        absolute 
+        bottom-0 
+        lg:bottom-28 
+        grid-rows-2
+
+      }
+      `
+        }    
+      </style>
     </div>
 
     // <div class="h-screen bg-fixed">
