@@ -48,7 +48,7 @@ export default function Events() {
     },
   ];
   return (
-    <div className="h-fit lg:h-screen" style={{ backgroundColor: "#00214c" }}>
+    <div className="h-fit " style={{ backgroundColor: "#00214c" }}>
       <Fade left>
         <div className="flex flex-box justify-center text-center">
           <h1 className="text-white text-5xl mb-32 mt-32">
