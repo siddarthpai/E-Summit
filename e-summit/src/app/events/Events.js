@@ -6,43 +6,43 @@ export default function Events() {
   const cardData = [
     {
       id: 1,
-      title: "Press Stress",
-      content: "test",
+      title: "Founder Fusion",
+      size: "Team size - 2 people",
       date: "27 Nov 2023",
       time: "11:00 AM-12:00 PM",
     },
     {
       id: 2,
-      title: "Press Stress",
-      content: "test",
+      title: "Elevate or Eliminate ",
+      size: "Team size - 2 people",
       date: "27 Nov 2023",
       time: "11:00 AM-12:00 PM",
     },
     {
       id: 3,
-      title: "Press Stress",
-      content: "test",
+      title: "El Camino",
+      size: "Team size - 2 people",
       date: "27 Nov 2023",
       time: "11:00 AM-12:00 PM",
     },
     {
       id: 4,
-      title: "Press Stress",
-      content: "test",
+      title: "Leadership Lunacy",
+      size: "Team size - 2 people",
       date: "27 Nov 2023",
       time: "11:00 AM-12:00 PM",
     },
     {
       id: 5,
-      title: "Press Stress",
-      content: "test",
+      title: "Startup Valley",
+      size: "Team size - 2 people",
       date: "27 Nov 2023",
       time: "11:00 AM-12:00 PM",
     },
     {
       id: 6,
-      title: "Press Stress",
-      content: "test",
+      title: "Entreprene- -urial Odyssey",
+      size: "Team size - 2 people",
       date: "27 Nov 2023",
       time: "11:00 AM-12:00 PM",
     },
@@ -58,6 +58,10 @@ export default function Events() {
       </Fade>
 
       <Cards cardData={cardData} />
+      <br />
+      <br />
+      <br />
+      <br />
     </div>
   );
 }

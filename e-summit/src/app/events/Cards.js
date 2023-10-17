@@ -14,7 +14,7 @@ const SquishyCard = ({ cardData }) => {
   );
 };
 
-const Card = ({ title, content, time, date }) => {
+const Card = ({ title, size, time, date }) => {
   return (
     <motion.div
       whileHover="hover"
@@ -28,7 +28,7 @@ const Card = ({ title, content, time, date }) => {
         },
       }}
       className="relative h-96 w-80 shrink-0 overflow-hidden rounded-xl  p-8"
-      style={{ backgroundColor: "#A7C7F1" }}
+      style={{ backgroundColor: "#748ADC" }}
     >
       <div className="relative z-10 text-white">
         <motion.span
@@ -46,7 +46,7 @@ const Card = ({ title, content, time, date }) => {
         >
           {title}
         </motion.span>
-        <p>{content}</p>
+        <p>{size}</p>
         <p>{time}</p>
         <p>{date}</p>
       </div>
