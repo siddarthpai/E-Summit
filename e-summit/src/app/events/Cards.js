@@ -1,10 +1,14 @@
 import { motion } from "framer-motion";
 
+import Zoom from "react-reveal/Zoom";
+
 const SquishyCard = ({ cardData }) => {
   return (
-    <div className="mx-auto w-fit grid grid-cols-3 gap-16">
+    <div className="mx-auto w-fit grid grid-cols-1 gap-16 lg:grid-cols-3 lg:gap-16 ">
       {cardData.map((card) => (
-        <Card key={card.id} {...card} />
+        <Zoom left>
+          <Card className="mb-16" key={card.id} {...card} />
+        </Zoom>
       ))}
     </div>
   );
