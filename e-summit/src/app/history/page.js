@@ -5,7 +5,7 @@ import Navbar from "../navbar/Navbar";
 import Image from "next/image";
 
 const History = () => {
-  const photoArray = Array.from({ length: 14 }, (_, i) => `${i + 1}.jpg`);
+  
 
   return (
     <div style={{ backgroundColor: "#00214c" }}>

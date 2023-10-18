@@ -1,6 +1,50 @@
 import { motion } from "framer-motion";
-
+import React from "react";
+import { Poppins } from "next/font/google";
 import Zoom from "react-reveal/Zoom";
+import Dialog from "@material-ui/core/Dialog";
+import DialogContentText from "@material-ui/core/DialogContentText";
+import DialogTitle from "@material-ui/core/DialogTitle";
+import DialogActions from "@material-ui/core/DialogActions";
+import DialogContent from "@material-ui/core/DialogContent";
+import { Button, Theme, createTheme } from "@material-ui/core";
+import "./style.css";
+
+const theme = createTheme({
+  typography: {
+    fontFamily: [
+      "-apple-system",
+      "BlinkMacSystemFont",
+      '"Segoe UI"',
+      "Roboto",
+      '"Helvetica Neue"',
+      "Arial",
+      "sans-serif",
+      '"Apple Color Emoji"',
+      '"Segoe UI Emoji"',
+      '"Segoe UI Symbol"',
+      '"Poppins"',
+    ].join(","),
+  },
+});
+
+const backgroundColors = ["#748ADC", "#958EE8", "#A7C7F1"];
+
+const getRandomColor = () => {
+  const randomIndex = Math.floor(Math.random() * backgroundColors.length);
+  return backgroundColors[randomIndex];
+};
+
+const animationVariants = [
+  { scale: 1.05, rotate: 0 },
+  { scale: 1, rotate: 10 },
+  { scale: 1.1, rotate: -10 },
+];
+
+const getRandomAnimation = () => {
+  const randomIndex = Math.floor(Math.random() * animationVariants.length);
+  return animationVariants[randomIndex];
+};
 
 const SquishyCard = ({ cardData }) => {
   return (
@@ -14,7 +58,21 @@ const SquishyCard = ({ cardData }) => {
   );
 };
 
-const Card = ({ title, size, time, date }) => {
+const Card = ({ title, size, time, date, content }) => {
+  const [open, setOpen] = React.useState(false);
+  const [backgroundColor, setBackgroundColor] = React.useState(
+    getRandomColor()
+  );
+  const [animation, setAnimation] = React.useState(getRandomAnimation());
+
+  const handleClickToOpen = () => {
+    setOpen(true);
+  };
+
+  const handleToClose = () => {
+    setOpen(false);
+  };
+
   return (
     <motion.div
       whileHover="hover"
@@ -23,12 +81,10 @@ const Card = ({ title, size, time, date }) => {
         ease: "backInOut",
       }}
       variants={{
-        hover: {
-          scale: 1.05,
-        },
+        hover: animation,
       }}
       className="relative h-96 w-80 shrink-0 overflow-hidden rounded-xl  p-8"
-      style={{ backgroundColor: "#748ADC" }}
+      style={{ backgroundColor }}
     >
       <div className="relative z-10 text-white">
         <motion.span
@@ -50,10 +106,50 @@ const Card = ({ title, size, time, date }) => {
         <p>{time}</p>
         <p>{date}</p>
       </div>
-      <button className="absolute bottom-4 left-4 right-4 z-20 rounded border-2 border-white bg-white py-2 text-center font-mono font-black uppercase text-neutral-800 backdrop-blur transition-colors hover:bg-white/30 hover:text-white">
-        Get it now
+      <button
+        onClick={handleClickToOpen}
+        className="absolute bottom-4 left-4 right-4 z-20 rounded border-2 border-white bg-white py-2 text-center font-mono font-black uppercase text-neutral-800 backdrop-blur transition-colors hover:bg-white/30 hover:text-white"
+      >
+        Read More!
       </button>
       <Background />
+      <Dialog
+        id="Dialog-box"
+        open={open}
+        onClose={handleToClose}
+        PaperProps={{
+          style: {
+            minHeight: "60%",
+            maxHeight: "60%",
+            maxWidth: "60%",
+            minWidth: "60%",
+            backgroundColor: "#00214C",
+            color: "white",
+            fontFamily: "monospace",
+            borderRadius: "40px",
+          },
+        }}
+      >
+        <DialogTitle>
+          <b>{title}</b>
+        </DialogTitle>
+        <hr />
+        <DialogContent>
+          <DialogContentText
+            style={{ color: "white", fontFamily: "monospace" }}
+          >
+            {content}
+          </DialogContentText>
+        </DialogContent>
+        <DialogActions>
+          <button
+            onClick={handleToClose}
+            className="absolute bottom-4 left-4 right-4 z-20 rounded border-2 border-white bg-white py-2 text-center font-mono font-black uppercase text-neutral-800 backdrop-blur transition-colors hover:bg-white/30 hover:text-white"
+          >
+            Close X
+          </button>
+        </DialogActions>
+      </Dialog>
     </motion.div>
   );
 };
