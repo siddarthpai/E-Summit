@@ -1,10 +1,10 @@
-"use client";
-import React from "react";
-import { Slide } from "react-reveal";
-import Bounce from "react-reveal/Bounce";
+'use client';
+import React from 'react';
+import { Slide } from 'react-reveal';
+import Bounce from 'react-reveal/Bounce';
 function About() {
   return (
-    <div class="bg-white h-screen">
+    <div class="bg-white h-screen border-black border-4">
       <div className="flex justify-center align-center">
         <h2 class="text-7xl font-bold m-16  hover:text-blue-950">About</h2>
       </div>
@@ -30,7 +30,7 @@ function About() {
               aspirations and expand your horizons.
             </p>
             <p class="hover:text-fuchsia-700">
-              Mark your calendars for the{" "}
+              Mark your calendars for the{' '}
               <u>3rd, 4th and 5th of November, 2023!</u>
             </p>
           </div>

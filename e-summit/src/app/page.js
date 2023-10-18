@@ -8,16 +8,16 @@ import ContactUs from './ContactUs/contactUs';
 import DefaultCarousel from './carousels/Carousel';
 import CardCarousel from './carousels/CardCarousel';
 
+import AboutUsCarousel from './carousels/AboutUsCarousel';
+
 export default function Home() {
   return (
     <div>
       <Landing />
-      <About />
+      <AboutUsCarousel />
       <Events />
-
-      <DefaultCarousel />
-      <CardCarousel />
-
+      {/* <DefaultCarousel /> */}
+      {/* <CardCarousel /> */}
       <ContactUs />
     </div>
   );
