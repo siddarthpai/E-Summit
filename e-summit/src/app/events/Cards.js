@@ -28,6 +28,24 @@ const theme = createTheme({
   },
 });
 
+const backgroundColors = ["#748ADC", "#958EE8", "#A7C7F1"];
+
+const getRandomColor = () => {
+  const randomIndex = Math.floor(Math.random() * backgroundColors.length);
+  return backgroundColors[randomIndex];
+};
+
+const animationVariants = [
+  { scale: 1.05, rotate: 0 },
+  { scale: 1, rotate: 10 },
+  { scale: 1.1, rotate: -10 },
+];
+
+const getRandomAnimation = () => {
+  const randomIndex = Math.floor(Math.random() * animationVariants.length);
+  return animationVariants[randomIndex];
+};
+
 const SquishyCard = ({ cardData }) => {
   return (
     <div className="mx-auto w-fit grid grid-cols-1 gap-16 lg:grid-cols-3 lg:gap-16 ">
@@ -42,6 +60,10 @@ const SquishyCard = ({ cardData }) => {
 
 const Card = ({ title, size, time, date, content }) => {
   const [open, setOpen] = React.useState(false);
+  const [backgroundColor, setBackgroundColor] = React.useState(
+    getRandomColor()
+  );
+  const [animation, setAnimation] = React.useState(getRandomAnimation());
 
   const handleClickToOpen = () => {
     setOpen(true);
@@ -59,12 +81,10 @@ const Card = ({ title, size, time, date, content }) => {
         ease: "backInOut",
       }}
       variants={{
-        hover: {
-          scale: 1.05,
-        },
+        hover: animation,
       }}
       className="relative h-96 w-80 shrink-0 overflow-hidden rounded-xl  p-8"
-      style={{ backgroundColor: "#748ADC" }}
+      style={{ backgroundColor }}
     >
       <div className="relative z-10 text-white">
         <motion.span
