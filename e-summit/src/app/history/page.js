@@ -5,6 +5,8 @@ import Navbar from "../navbar/Navbar";
 import Image from "next/image";
 
 const History = () => {
+  const photoArray = Array.from({ length: 14 }, (_, i) => `${i + 1}.jpg`);
+
   return (
     <div style={{ backgroundColor: "#00214c" }}>
       <Navbar />
@@ -24,7 +26,7 @@ const History = () => {
       </div>
 
       <ReverseHorizontalScrollCarousel />
-      <HorizontalScrollCarousel />
+      <Horizontal2ScrollCarousel />
       <div className="flex items-center justify-center">
         <h1 className="text-center text-2xl text-white mb-8 sm:text-5xl">
           Stay Tuned for what we have in store this year! <br /> Check out our
@@ -55,6 +57,26 @@ const HorizontalScrollCarousel = () => {
     </section>
   );
 };
+const Horizontal2ScrollCarousel = () => {
+  const targetRef = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: targetRef,
+  });
+
+  const x = useTransform(scrollYProgress, [0, 1], ["1%", "-35%"]);
+
+  return (
+    <section ref={targetRef} className="relative h-[300vh]">
+      <div className="sticky top-0 flex h-screen items-center overflow-hidden">
+        <motion.div style={{ x }} className="flex gap-4">
+          {cards3.map((card) => {
+            return <Card card={card} key={card.id} />;
+          })}
+        </motion.div>
+      </div>
+    </section>
+  );
+};
 
 const ReverseHorizontalScrollCarousel = () => {
   const targetRef = useRef(null);
@@ -68,7 +90,7 @@ const ReverseHorizontalScrollCarousel = () => {
     <section ref={targetRef} className="relative h-[300vh]">
       <div className="sticky top-0 flex h-screen items-center overflow-hidden">
         <motion.div style={{ x }} className="flex gap-4">
-          {cards.map((card) => {
+          {cards2.map((card) => {
             return <Card card={card} key={card.id} />;
           })}
         </motion.div>
@@ -99,27 +121,27 @@ export default History;
 
 const cards = [
   {
-    url: "test1.jpg",
+    url: "a1.jpeg",
     title: "Image 1",
     id: 1,
   },
   {
-    url: "test2.jpg",
+    url: "a2.jpeg",
     title: "Image 2",
     id: 2,
   },
   {
-    url: "test1.jpg",
+    url: "a3.jpeg",
     title: "Image 1",
     id: 3,
   },
   {
-    url: "test2.jpg",
+    url: "a4.jpeg",
     title: "Image 2",
     id: 4,
   },
   {
-    url: "test1.jpg",
+    url: "a5.jpeg",
     title: "Image 1",
     id: 5,
   },
@@ -127,27 +149,27 @@ const cards = [
 
 const cards2 = [
   {
-    url: "background.jpg",
+    url: "b1.jpeg",
     title: "Image 1",
     id: 1,
   },
   {
-    url: "background copy.jpg",
+    url: "b2.jpeg",
     title: "Image 2",
     id: 2,
   },
   {
-    url: "background.jpg",
+    url: "b3.jpeg",
     title: "Image 1",
     id: 3,
   },
   {
-    url: "background copy.jpg",
+    url: "b4.jpeg",
     title: "Image 2",
     id: 4,
   },
   {
-    url: "background.jpg",
+    url: "b5.jpeg",
     title: "Image 1",
     id: 5,
   },
@@ -155,28 +177,23 @@ const cards2 = [
 
 const cards3 = [
   {
-    url: "background.jpg",
+    url: "c1.jpeg",
     title: "Image 1",
     id: 1,
   },
   {
-    url: "background copy.jpg",
+    url: "c2.jpeg",
     title: "Image 2",
     id: 2,
   },
   {
-    url: "background.jpg",
+    url: "c3.jpeg",
     title: "Image 1",
     id: 3,
   },
   {
-    url: "background copy.jpg",
+    url: "c4.jpeg",
     title: "Image 2",
     id: 4,
-  },
-  {
-    url: "background.jpg",
-    title: "Image 1",
-    id: 5,
   },
 ];

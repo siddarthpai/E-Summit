@@ -34,7 +34,9 @@ export default function landing() {
             <Image src="/esummit.png" width={200} height={200}></Image>
             <h1 className="font-bold text-4xl mb-72 md:text-5xl lg:text-7xl lg:mb-64">
               {" "}
-              E-Summit 23'
+              ESummit 23'
+              <br />
+              <br />
             </h1>
           </div>
         </Fade>
