@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Red from "../../public/background.jpg";
+import Adhoc from "../../public/white-bg.jpg";
 import Alt from "../../public/background copy.jpg";
 
 export default function Background() {
