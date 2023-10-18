@@ -8,7 +8,7 @@ function About() {
       <div className="flex justify-center align-center">
         <h2 class="text-7xl font-bold m-16  hover:text-blue-950">About</h2>
       </div>
-      <div class="grid grid-rows-2 gap-16  text-center lg:text-4xl ">
+      <div class="grid grid-rows-2 gap-16  text-center lg:text-3xl ">
         <Slide left cascade>
           <div>
             <p class="mb-16 hover:text-fuchsia-700 ">
