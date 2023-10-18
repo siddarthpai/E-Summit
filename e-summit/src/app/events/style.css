@@ -1,0 +1,10 @@
+#Dialog-box {
+  backdrop-filter: blur(8px);
+  background-color: rgba(255, 255, 255, 0.3);
+  text-align: center;
+  border-radius: 10px;
+}
+
+#Dialog-box .font-mono {
+  font-family: "Poppins", sans-serif; /* Apply Poppins font */
+}

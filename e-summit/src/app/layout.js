@@ -4,7 +4,6 @@ import { Poppins } from "next/font/google";
 import Splash from "./splashscreen/Spashscreen";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import Background from "./Background";
 
 const poppins = Poppins({ subsets: ["latin"], weight: "500" });
 

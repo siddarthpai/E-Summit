@@ -7,6 +7,7 @@ export default function Events() {
     {
       id: 1,
       title: "Founder Fusion",
+      content: "test2",
       size: "Team size - 2 people",
       date: "27 Nov 2023",
       time: "11:00 AM-12:00 PM",
@@ -14,6 +15,7 @@ export default function Events() {
     {
       id: 2,
       title: "Elevate or Eliminate ",
+      content: "test",
       size: "Team size - 2 people",
       date: "27 Nov 2023",
       time: "11:00 AM-12:00 PM",
@@ -21,6 +23,7 @@ export default function Events() {
     {
       id: 3,
       title: "El Camino",
+      content: "test",
       size: "Team size - 2 people",
       date: "27 Nov 2023",
       time: "11:00 AM-12:00 PM",
@@ -28,6 +31,7 @@ export default function Events() {
     {
       id: 4,
       title: "Leadership Lunacy",
+      content: "test",
       size: "Team size - 2 people",
       date: "27 Nov 2023",
       time: "11:00 AM-12:00 PM",
@@ -35,6 +39,7 @@ export default function Events() {
     {
       id: 5,
       title: "Startup Valley",
+      content: "test",
       size: "Team size - 2 people",
       date: "27 Nov 2023",
       time: "11:00 AM-12:00 PM",
@@ -42,6 +47,7 @@ export default function Events() {
     {
       id: 6,
       title: "Entreprene- -urial Odyssey",
+      content: "test",
       size: "Team size - 2 people",
       date: "27 Nov 2023",
       time: "11:00 AM-12:00 PM",
