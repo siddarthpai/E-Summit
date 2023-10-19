@@ -112,7 +112,9 @@ const Card = ({
           }}
           className="my-2 block origin-top-left font-mono text-5xl font-black leading-[1.2]"
         >
-          {title}
+          <div id="test" className="">
+            {title}
+          </div>
         </motion.span>
         <p>{size}</p>
         <p>{time}</p>
@@ -153,17 +155,17 @@ const Card = ({
         <DialogContent>
           <div>
             <p
-              className="lg:m-16 text-xl lg:text-xl"
+              className="lg:m-16 text-xl lg:text-2xl"
               style={{ color: "white", fontFamily: "monospace" }}
             >
               {content}
             </p>
-            <div className="grid grid-rows-4 gap-5">
+            <div className="grid grid-rows-4 gap-5 text-2xl">
               <p> {date}</p>
               <p>{time}</p>
               <p>{size}</p>
 
-              <a className="font-bold text-xl " href={link}>
+              <a className="font-bold text-2xl " href={link}>
                 Register here{" "}
               </a>
             </div>

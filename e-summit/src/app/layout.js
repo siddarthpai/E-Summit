@@ -17,6 +17,9 @@ export default function RootLayout({ children }) {
   }, [isLoading]);
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/esummit.png" sizes="any" />
+      </head>
       <body className={poppins.className}>
         {isLoading && isHome ? (
           <Splash finishLoading={() => setIsLoading(false)} />
