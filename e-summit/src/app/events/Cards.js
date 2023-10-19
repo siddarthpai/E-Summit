@@ -10,34 +10,6 @@ import DialogContent from "@material-ui/core/DialogContent";
 import { Button, Theme, createTheme } from "@material-ui/core";
 import "./style.css";
 
-const theme = createTheme({
-  typography: {
-    fontFamily: [
-      "-apple-system",
-      "BlinkMacSystemFont",
-      '"Segoe UI"',
-      "Roboto",
-      '"Helvetica Neue"',
-      "Arial",
-      "sans-serif",
-      '"Apple Color Emoji"',
-      '"Segoe UI Emoji"',
-      '"Segoe UI Symbol"',
-      '"Poppins"',
-    ].join(","),
-  },
-});
-
-const getRandomAnimation = (index) => {
-  if (index === 0 || index === 3) {
-    return { scale: 1.05, rotate: 10 };
-  } else if (index === 2 || index === 5) {
-    return { scale: 1.05, rotate: -10 };
-  } else {
-    return { scale: 1, rotate: 0 };
-  }
-};
-
 const SquishyCard = ({ cardData }) => {
   return (
     <div className="mx-auto w-fit grid grid-cols-1 gap-16 lg:grid-cols-3 lg:gap-16 ">
@@ -56,7 +28,6 @@ const SquishyCard = ({ cardData }) => {
                 ? "#A7C7F1"
                 : ""
             }
-            tilt={getRandomAnimation(index)}
           />
         </Zoom>
       ))}
@@ -77,7 +48,6 @@ const Card = ({
   cost,
 }) => {
   const [open, setOpen] = React.useState(false);
-  const [animation, setAnimation] = React.useState(getRandomAnimation());
 
   const handleClickToOpen = () => {
     setOpen(true);
@@ -93,9 +63,6 @@ const Card = ({
       transition={{
         duration: 1,
         ease: "backInOut",
-      }}
-      variants={{
-        hover: tilt,
       }}
       className="relative h-96 w-80 shrink-0 overflow-hidden rounded-xl  p-8"
       style={{ backgroundColor: randomColor }}
