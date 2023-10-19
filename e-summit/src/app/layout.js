@@ -19,6 +19,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <link rel="icon" href="/esummit.png" sizes="any" />
+        <title>ESummit'23</title>
       </head>
       <body className={poppins.className}>
         {isLoading && isHome ? (
