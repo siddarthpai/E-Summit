@@ -14,6 +14,7 @@ export default function Events() {
       time: "11:00 AM-12:00 PM",
       link: "https://www.google.com/",
       venue: "venue",
+      cost: "Free",
     },
     {
       id: 2,
@@ -25,6 +26,7 @@ export default function Events() {
       time: "11:00 AM-12:00 PM",
       link: "https://www.google.com/",
       venue: "venue",
+      cost: "Free",
     },
     {
       id: 3,
@@ -36,6 +38,7 @@ export default function Events() {
       time: "11:00 AM-12:00 PM",
       link: "https://www.google.com/",
       venue: "venue",
+      cost: "Free",
     },
     {
       id: 4,
@@ -47,6 +50,7 @@ export default function Events() {
       time: "11:00 AM-12:00 PM",
       link: "https://www.google.com/",
       venue: "venue",
+      cost: "Free",
     },
     {
       id: 5,
@@ -58,6 +62,7 @@ export default function Events() {
       time: "11:00 AM-12:00 PM",
       link: "https://www.google.com/",
       venue: "venue",
+      cost: "Paid",
     },
     {
       id: 6,
@@ -69,6 +74,7 @@ export default function Events() {
       time: "11:00 AM-12:00 PM",
       link: "https://www.google.com/",
       venue: "venue",
+      cost: "Paid",
     },
   ];
   return (

@@ -74,6 +74,7 @@ const Card = ({
   tilt,
   link,
   venue,
+  cost,
 }) => {
   const [open, setOpen] = React.useState(false);
   const [animation, setAnimation] = React.useState(getRandomAnimation());
@@ -100,6 +101,9 @@ const Card = ({
       style={{ backgroundColor: randomColor }}
     >
       <div className="relative z-10 text-white">
+        <span className="mb-3 block w-fit rounded-full bg-black/30 px-3 py-0.5 text-sm font-light text-white">
+          {cost}
+        </span>
         <motion.span
           initial={{ scale: 0.85 }}
           variants={{
