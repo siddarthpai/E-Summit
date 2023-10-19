@@ -30,9 +30,8 @@ export default function Navbar() {
       document.removeEventListener("click", handleClickOutside);
     };
   }, []);
-
-  const handleScrollToSection = (ref) => {
-    ref.current.scrollIntoView({ behavior: "smooth" });
+  const handleCloseMenu = () => {
+    setIsNavOpen(false);
   };
 
   return (
@@ -77,13 +76,13 @@ export default function Navbar() {
           <nav>
             <section className="MOBILE-MENU flex">
               <div
-                className={`HAMBURGER-ICON space-y-2 fixed right-0 mr-16 mt-20 lg:mr-24 lg:mt-24 z-50  
+                className={`HAMBURGER-ICON space-y-2 fixed right-0 mr-2 mt-20 lg:mr-24 lg:mt-24 z-50  
                 }`}
                 onClick={handleToggleNav}
               >
-                <span className="block h-0.5 w-8 animate-pulse bg-fuchsia-600"></span>
-                <span className="block h-0.5 w-8 animate-pulse bg-fuchsia-600"></span>
-                <span className="block h-0.5 w-8 animate-pulse bg-fuchsia-600"></span>
+                <span className="block h-0.5 w-8 animate-pulse bg-white"></span>
+                <span className="block h-0.5 w-8 animate-pulse bg-white"></span>
+                <span className="block h-0.5 w-8 animate-pulse bg-white"></span>
               </div>
               <div
                 className={isNavOpen ? "showMenuNav" : "hideMenuNav"}
@@ -108,20 +107,38 @@ export default function Navbar() {
                 </div>
                 <ul className="MENU-LINK-MOBILE-OPEN flex flex-col items-center justify-between min-h-[250px]">
                   <li className="border-b border-gray-400 my-8 uppercase">
-                    <ScrollLink to="about" smooth={true} duration={500}>
+                    <ScrollLink
+                      to="about"
+                      smooth={true}
+                      duration={500}
+                      onClick={handleCloseMenu}
+                    >
                       About
                     </ScrollLink>
                   </li>
                   <li className="border-b border-gray-400 my-8 uppercase">
-                    <ScrollLink to="events" smooth={true} duration={500}>
+                    <ScrollLink
+                      to="events"
+                      smooth={true}
+                      duration={500}
+                      onClick={handleCloseMenu}
+                    >
                       Events
                     </ScrollLink>
                   </li>
-                  <li className="border-b border-gray-400 my-8 uppercase">
+                  <li
+                    className="border-b border-gray-400 my-8 uppercase"
+                    onClick={handleCloseMenu}
+                  >
                     <a href="/history">History</a>
                   </li>
                   <li className="border-b border-gray-400 my-8 uppercase">
-                    <ScrollLink to="contact" smooth={true} duration={500}>
+                    <ScrollLink
+                      to="contact"
+                      smooth={true}
+                      duration={500}
+                      onClick={handleCloseMenu}
+                    >
                       Contact Us
                     </ScrollLink>
                   </li>
