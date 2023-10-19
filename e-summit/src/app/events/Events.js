@@ -42,7 +42,7 @@ export default function Events() {
     },
     {
       id: 4,
-      title: "Leadership Lunacy",
+      title: "Best Regional Manager",
       content:
         "Leadership lunacy, where innovation meets strategy. Navigate Uncertainty with Expertise . Develop actionable strategies, real-time insights, and resilient solutions to handle any challenge effectively. Connect, learn, and ignite your business ventures. Be part of the entrepreneurial revolution!",
       size: "Team size - 1 person",
