@@ -6,8 +6,6 @@ import Events from "./events/Events";
 import Navbar from "./navbar/Navbar";
 import ContactUs from "./ContactUs/contactUs";
 
-import AboutUsCarousel from "./carousels/AboutUsCarousel";
-
 export default function Home() {
   return (
     <div>

@@ -64,7 +64,16 @@ const SquishyCard = ({ cardData }) => {
   );
 };
 
-const Card = ({ title, size, time, date, content, randomColor, tilt }) => {
+const Card = ({
+  title,
+  size,
+  time,
+  date,
+  content,
+  randomColor,
+  tilt,
+  link,
+}) => {
   const [open, setOpen] = React.useState(false);
   const [animation, setAnimation] = React.useState(getRandomAnimation());
 
@@ -122,10 +131,10 @@ const Card = ({ title, size, time, date, content, randomColor, tilt }) => {
         onClose={handleToClose}
         PaperProps={{
           style: {
-            minHeight: "60%",
-            maxHeight: "60%",
-            maxWidth: "60%",
-            minWidth: "60%",
+            minHeight: "75%",
+            maxHeight: "75%",
+            maxWidth: "75%",
+            minWidth: "75%",
             backgroundColor: "#00214C",
             color: "white",
             fontFamily: "monospace",
@@ -133,24 +142,42 @@ const Card = ({ title, size, time, date, content, randomColor, tilt }) => {
           },
         }}
       >
-        <DialogTitle>
-          <b>{title}</b>
-        </DialogTitle>
+        <h1
+          className="m-8 text-xl lg:text-3xl"
+          style={{ color: "white", fontFamily: "monospace" }}
+        >
+          {title}
+        </h1>
+
         <hr />
         <DialogContent>
-          <DialogContentText
-            style={{ color: "white", fontFamily: "monospace" }}
-          >
-            {content}
-          </DialogContentText>
+          <div>
+            <p
+              className="lg:m-16 text-xl lg:text-xl"
+              style={{ color: "white", fontFamily: "monospace" }}
+            >
+              {content}
+            </p>
+            <div className="grid grid-rows-4 gap-5">
+              <p> {date}</p>
+              <p>{time}</p>
+              <p>{size}</p>
+
+              <a className="font-bold text-xl " href={link}>
+                Register here{" "}
+              </a>
+            </div>
+          </div>
         </DialogContent>
         <DialogActions>
-          <button
-            onClick={handleToClose}
-            className="absolute bottom-4 left-4 right-4 z-20 rounded border-2 border-white bg-white py-2 text-center font-mono font-black uppercase text-neutral-800 backdrop-blur transition-colors hover:bg-white/30 hover:text-white"
-          >
-            Close X
-          </button>
+          <div>
+            <button
+              onClick={handleToClose}
+              className="absolute bottom-4 left-4 right-4 z-20 rounded border-2 border-white bg-white py-2 text-center font-mono font-black uppercase text-neutral-800 backdrop-blur transition-colors hover:bg-white/30 hover:text-white"
+            >
+              Close X
+            </button>
+          </div>
         </DialogActions>
       </Dialog>
     </motion.div>
