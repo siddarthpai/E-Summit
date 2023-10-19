@@ -1,5 +1,7 @@
 import React from "react";
 import { useState } from "react";
+import { useEffect } from "react";
+import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 
 export default function Navbar() {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -11,6 +13,26 @@ export default function Navbar() {
 
   const handleToggleBackground = () => {
     setIsLightBackground((prev) => !prev);
+  };
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      const navbar = document.getElementById("navbar");
+
+      if (navbar && !navbar.contains(event.target)) {
+        setIsNavOpen(false);
+      }
+    };
+
+    document.addEventListener("click", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, []);
+
+  const handleScrollToSection = (ref) => {
+    ref.current.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
@@ -45,9 +67,12 @@ export default function Navbar() {
             </div>
           </div>
         </div>
-        <div className="flex items-center justify-between ">
+        <div
+          className="flex items-center justify-between "
+          style={{ position: "fixed", width: "100%", zIndex: 1000 }}
+        >
           <nav>
-            <section className="MOBILE-MENU flex  ">
+            <section className="MOBILE-MENU flex">
               <div
                 className={`HAMBURGER-ICON space-y-2 fixed right-0 mr-16 mt-20 lg:mr-32 lg:mt-24 z-50  ${
                   isLightBackground ? "dark-icon" : "light-icon"
@@ -58,7 +83,10 @@ export default function Navbar() {
                 <span className="block h-0.5 w-8 animate-pulse bg-white"></span>
                 <span className="block h-0.5 w-8 animate-pulse bg-white"></span>
               </div>
-              <div className={isNavOpen ? "showMenuNav" : "hideMenuNav"}>
+              <div
+                className={isNavOpen ? "showMenuNav" : "hideMenuNav"}
+                style={{ zIndex: 50 }}
+              >
                 <div
                   className="CROSS-ICON absolute top-0 right-0 px-8 py-8"
                   onClick={() => setIsNavOpen(false)}
@@ -78,16 +106,22 @@ export default function Navbar() {
                 </div>
                 <ul className="MENU-LINK-MOBILE-OPEN flex flex-col items-center justify-between min-h-[250px]">
                   <li className="border-b border-gray-400 my-8 uppercase">
-                    <a>About</a>
+                    <ScrollLink to="about" smooth={true} duration={500}>
+                      About
+                    </ScrollLink>
                   </li>
                   <li className="border-b border-gray-400 my-8 uppercase">
-                    <a>Events</a>
+                    <ScrollLink to="events" smooth={true} duration={500}>
+                      Events
+                    </ScrollLink>
                   </li>
                   <li className="border-b border-gray-400 my-8 uppercase">
                     <a href="/history">History</a>
                   </li>
                   <li className="border-b border-gray-400 my-8 uppercase">
-                    <a>Contact</a>
+                    <ScrollLink to="contact" smooth={true} duration={500}>
+                      Contact Us
+                    </ScrollLink>
                   </li>
                 </ul>
               </div>

@@ -1,24 +1,27 @@
-import React from 'react';
-import Image from 'next/image';
-import Landing from './landingpage/page';
-import About from './About';
-import History from './history/page';
-import Events from './events/Events';
-import ContactUs from './ContactUs/contactUs';
-import DefaultCarousel from './carousels/Carousel';
-import CardCarousel from './carousels/CardCarousel';
+"use client";
+import React from "react";
+import Landing from "./landingpage/page";
+import About from "./About";
+import Events from "./events/Events";
+import Navbar from "./navbar/Navbar";
+import ContactUs from "./ContactUs/contactUs";
 
-import AboutUsCarousel from './carousels/AboutUsCarousel';
+import AboutUsCarousel from "./carousels/AboutUsCarousel";
 
 export default function Home() {
   return (
     <div>
+      <Navbar />
       <Landing />
-      <AboutUsCarousel />
-      <Events />
-      {/* <DefaultCarousel /> */}
-      {/* <CardCarousel /> */}
-      <ContactUs />
+      <div id="about">
+        <About />
+      </div>
+      <div id="events">
+        <Events />
+      </div>
+      <div id="contact">
+        <ContactUs />
+      </div>
     </div>
   );
 }

@@ -5,8 +5,6 @@ import { Fade, Rotate, Zoom } from "react-reveal";
 import { BsInstagram } from "react-icons/bs";
 import { AiOutlineLinkedin } from "react-icons/ai";
 import { useState } from "react";
-import Navbar from "../navbar/Navbar";
-
 export default function landing() {
   const myStyle = {
     backgroundImage: "url('/background copy.jpg')",
@@ -27,7 +25,6 @@ export default function landing() {
 
   return (
     <div style={myStyle} className="bg-fixed">
-      <Navbar />
       <div id="center-text" class="grid h-screen place-items-center text-white">
         <Fade left>
           <div className="grid h-screen mt-40 lg:m-40 place-items-center text-white ">
