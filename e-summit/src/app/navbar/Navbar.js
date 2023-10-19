@@ -15,7 +15,12 @@ export default function Navbar() {
 
   return (
     <div>
-      <div id="navbar" className={`grid grid-cols-2 ${isLightBackground ? "light-bg" : "dark-bg"}`}>
+      <div
+        id="navbar"
+        className={`grid grid-cols-2 ${
+          isLightBackground ? "light-bg" : "dark-bg"
+        }`}
+      >
         <div className="absolute left-0 m-16">
           <div className="grid grid-cols-3 gap-2">
             <div className="flex items-center space-x-2 sm:space-x-4 lg:space-x-6">
@@ -44,7 +49,7 @@ export default function Navbar() {
           <nav>
             <section className="MOBILE-MENU flex  ">
               <div
-                className={`HAMBURGER-ICON space-y-2 fixed right-0 mr-16 mt-20 lg:mr-32 lg:mt-24 ${
+                className={`HAMBURGER-ICON space-y-2 fixed right-0 mr-16 mt-20 lg:mr-32 lg:mt-24 z-50  ${
                   isLightBackground ? "dark-icon" : "light-icon"
                 }`}
                 onClick={handleToggleNav}
