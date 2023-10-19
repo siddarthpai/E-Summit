@@ -13,6 +13,7 @@ export default function Events() {
       date: "27 Nov 2023",
       time: "11:00 AM-12:00 PM",
       link: "https://www.google.com/",
+      venue: "venue",
     },
     {
       id: 2,
@@ -23,6 +24,7 @@ export default function Events() {
       date: "27 Nov 2023",
       time: "11:00 AM-12:00 PM",
       link: "https://www.google.com/",
+      venue: "venue",
     },
     {
       id: 3,
@@ -33,6 +35,7 @@ export default function Events() {
       date: "27 Nov 2023",
       time: "11:00 AM-12:00 PM",
       link: "https://www.google.com/",
+      venue: "venue",
     },
     {
       id: 4,
@@ -43,6 +46,7 @@ export default function Events() {
       date: "27 Nov 2023",
       time: "11:00 AM-12:00 PM",
       link: "https://www.google.com/",
+      venue: "venue",
     },
     {
       id: 5,
@@ -53,6 +57,7 @@ export default function Events() {
       date: "3rd Nov 2023",
       time: "11:00 AM-12:00 PM",
       link: "https://www.google.com/",
+      venue: "venue",
     },
     {
       id: 6,
@@ -63,6 +68,7 @@ export default function Events() {
       date: "3rd Nov 2023",
       time: "11:00 AM-12:00 PM",
       link: "https://www.google.com/",
+      venue: "venue",
     },
   ];
   return (

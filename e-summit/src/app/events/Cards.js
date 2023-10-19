@@ -73,6 +73,7 @@ const Card = ({
   randomColor,
   tilt,
   link,
+  venue,
 }) => {
   const [open, setOpen] = React.useState(false);
   const [animation, setAnimation] = React.useState(getRandomAnimation());
@@ -155,23 +156,24 @@ const Card = ({
         <DialogContent>
           <div>
             <p
-              className="lg:m-16 text-xl lg:text-2xl"
-              style={{ color: "white", fontFamily: "monospace" }}
+              className="lg:m-16 text-lg lg:text-2xl font-bold"
+              style={{ color: "#A7C7F1", fontFamily: "monospace" }}
             >
               {content}
             </p>
-            <div className="grid grid-rows-4 gap-5 text-2xl">
-              <p> {date}</p>
-              <p>{time}</p>
-              <p>{size}</p>
+            <div className="grid grid-rows-4 gap-5 text-lg lg:text-2xl mt-5 font-bold">
+              <p style={{ color: "#958EE8" }}> {date}</p>
+              <p style={{ color: "#958EE8" }}>{time}</p>
+              <p style={{ color: "#958EE8" }}>{size}</p>
+              {/* <p style={{ color: "#958EE8" }}>{venue}</p> */}
 
-              <a className="font-bold text-2xl " href={link}>
-                Register here{" "}
+              <a className="font-bold text-xl lg:text-2xl " href={link}>
+                <u>Register here </u>
               </a>
             </div>
           </div>
         </DialogContent>
-        <DialogActions>
+        <DialogActions style={{ padding: "32px 32px" }}>
           <div>
             <button
               onClick={handleToClose}

@@ -3,10 +3,9 @@ import { motion, useTransform, useScroll } from "framer-motion";
 import { useRef } from "react";
 import Navbar from "../navbar/Navbar";
 import Image from "next/image";
+import Spashscreens from "../splashscreen/Spashscreen";
 
 const History = () => {
-  
-
   return (
     <div style={{ backgroundColor: "#00214c" }}>
       <Navbar />

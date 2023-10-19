@@ -51,18 +51,21 @@ export default function Navbar() {
                 className="w-12 h-16 sm:w-16 sm:h-20 lg:w-20 lg:h-24"
                 width="80"
                 height="80"
+                priority
               />
               <img
                 src="/cross.png"
                 className="w-14 h-10 sm:w-16 sm:h-12 lg:w-20 lg:h-16"
                 width="80"
                 height="80"
+                priority
               />
               <img
                 src="/eclub.png"
                 className="w-14 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20"
                 width="80"
                 height="80"
+                priority
               />
             </div>
           </div>
@@ -74,14 +77,13 @@ export default function Navbar() {
           <nav>
             <section className="MOBILE-MENU flex">
               <div
-                className={`HAMBURGER-ICON space-y-2 fixed right-0 mr-16 mt-20 lg:mr-32 lg:mt-24 z-50  ${
-                  isLightBackground ? "dark-icon" : "light-icon"
+                className={`HAMBURGER-ICON space-y-2 fixed right-0 mr-16 mt-20 lg:mr-24 lg:mt-24 z-50  
                 }`}
                 onClick={handleToggleNav}
               >
-                <span className="block h-0.5 w-8 animate-pulse bg-white"></span>
-                <span className="block h-0.5 w-8 animate-pulse bg-white"></span>
-                <span className="block h-0.5 w-8 animate-pulse bg-white"></span>
+                <span className="block h-0.5 w-8 animate-pulse bg-fuchsia-600"></span>
+                <span className="block h-0.5 w-8 animate-pulse bg-fuchsia-600"></span>
+                <span className="block h-0.5 w-8 animate-pulse bg-fuchsia-600"></span>
               </div>
               <div
                 className={isNavOpen ? "showMenuNav" : "hideMenuNav"}
