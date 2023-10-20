@@ -58,6 +58,9 @@ const Card = ({
   const handleToClose = () => {
     setOpen(false);
   };
+  const handleRegisterClick = () => {
+    window.open(link, "_blank"); // This will open the link in a new tab
+  };
 
   const fontSize = index === 5 ? "text-4xl" : "text-5xl";
 
@@ -150,6 +153,12 @@ const Card = ({
         </DialogContent>
         <DialogActions style={{ padding: "32px 32px" }}>
           <div>
+            <button
+              onClick={handleRegisterClick}
+              className="absolute bottom-16 left-4 right-4 z-20 rounded border-2 border-white bg-white py-2 text-center font-mono font-black uppercase text-neutral-800 backdrop-blur transition-colors hover:bg-white/30 hover:text-white"
+            >
+              Register
+            </button>
             <button
               onClick={handleToClose}
               className="absolute bottom-4 left-4 right-4 z-20 rounded border-2 border-white bg-white py-2 text-center font-mono font-black uppercase text-neutral-800 backdrop-blur transition-colors hover:bg-white/30 hover:text-white"
