@@ -6,8 +6,8 @@ import { Fade } from "react-reveal";
 
 export default function contactUs() {
   const RR_heads = {
-    id: "PES Ring Road Campus",
-    campus: "PES Ring Road Campus",
+    id: "RR Campus",
+    campus: "RR Campus",
 
     name1: "Shrishti A",
     phoneno1: "96064 00805",
@@ -23,8 +23,8 @@ export default function contactUs() {
   };
 
   const EC_heads = {
-    id: "PES Electronic City Campus",
-    campus: "PES Electronic City Campus",
+    id: "EC Campus",
+    campus: "EC Campus",
 
     name1: "Deepika Indran",
     phoneno1: "85530 30046",
@@ -50,7 +50,7 @@ export default function contactUs() {
   };
 
   return (
-    <div className="h-fit " style={{ backgroundColor: "white" }}>
+    <div className="h-fit " style={{ backgroundColor: "#96b3d8" }}>
       <Fade left>
         <div className="flex flex-box justify-center text-center">
           <h1 className="text-black text-5xl mb-16 mt-16 lg:mb-8 lg:mt-8">

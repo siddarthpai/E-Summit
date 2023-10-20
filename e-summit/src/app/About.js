@@ -3,7 +3,10 @@ import React from "react";
 import { Slide } from "react-reveal";
 function About() {
   return (
-    <div class="bg-white h-screen w-full border-black border-4">
+    <div
+      class="h-screen w-full border-black border-4"
+      style={{ backgroundColor: "#96b3d8" }}
+    >
       <div className="flex justify-center align-center">
         <h2 class="text-7xl font-bold m-16  hover:text-blue-950">About</h2>
       </div>
