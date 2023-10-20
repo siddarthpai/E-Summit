@@ -108,16 +108,6 @@ export default function Navbar() {
                 <ul className="MENU-LINK-MOBILE-OPEN flex flex-col items-center justify-between min-h-[250px]">
                   <li className="border-b border-gray-400 my-8 uppercase">
                     <ScrollLink
-                      to="about"
-                      smooth={true}
-                      duration={500}
-                      onClick={handleCloseMenu}
-                    >
-                      About
-                    </ScrollLink>
-                  </li>
-                  <li className="border-b border-gray-400 my-8 uppercase">
-                    <ScrollLink
                       to="events"
                       smooth={true}
                       duration={500}

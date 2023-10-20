@@ -11,9 +11,6 @@ export default function Home() {
     <div>
       <Navbar />
       <Landing />
-      <div id="about">
-        <About />
-      </div>
       <div id="events">
         <Events />
       </div>

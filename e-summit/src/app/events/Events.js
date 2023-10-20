@@ -52,9 +52,9 @@ export default function Events() {
       content:
         "Leadership lunacy, where innovation meets strategy. Navigate Uncertainty with Expertise . Develop actionable strategies, real-time insights, and resilient solutions to handle any challenge effectively. Connect, learn, and ignite your business ventures. Be part of the entrepreneurial revolution!",
       size: "Team size - 1 person",
-      date: "27 Nov 2023",
+      date: "5th November, 2023",
       POC: "Havish, Ashuthosh, Kamya",
-      time: "11:00 AM-12:00 PM",
+      time: "10:00 AM - 1:00 PM",
       link: "https://forms.gle/q4zuEfCnaksko5qc8",
       venue: "Venue: PES Ring Road Campus",
       cost: "Free",
