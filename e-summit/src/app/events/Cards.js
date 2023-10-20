@@ -46,6 +46,8 @@ const Card = ({
   link,
   venue,
   cost,
+  price,
+  index,
 }) => {
   const [open, setOpen] = React.useState(false);
 
@@ -56,7 +58,9 @@ const Card = ({
   const handleToClose = () => {
     setOpen(false);
   };
-  // Card 1 and 4
+
+  const fontSize = index === 5 ? "text-4xl" : "text-5xl";
+
   return (
     <motion.div
       whileHover="hover"
@@ -82,11 +86,9 @@ const Card = ({
             duration: 1,
             ease: "backInOut",
           }}
-          className="my-2 block origin-top-left font-mono text-5xl font-black leading-[1.2]"
+          className={`my-2 block origin-top-left ${fontSize} font-mono font-black leading-[1.2]`}
         >
-          <div id="test" className="">
-            {title}
-          </div>
+          <div className="">{title}</div>
         </motion.span>
         <p>{size}</p>
         <p>{time}</p>
@@ -133,9 +135,11 @@ const Card = ({
               {content}
             </p>
             <div className="grid grid-rows-4 gap-5 text-lg lg:text-2xl mt-5 font-bold">
-              <p style={{ color: "#958EE8" }}> {date}</p>
-              <p style={{ color: "#958EE8" }}>{time}</p>
+              <p style={{ color: "#958EE8" }}>Date: {date}</p>
+              <p style={{ color: "#958EE8" }}>Time: {time}</p>
               <p style={{ color: "#958EE8" }}>{size}</p>
+              <p style={{ color: "#d9493f" }}>{venue}</p>
+              <p style={{ color: "#d9493f" }}>{price}</p>
               {/* <p style={{ color: "#958EE8" }}>{venue}</p> */}
 
               <a className="font-bold text-xl lg:text-2xl " href={link}>

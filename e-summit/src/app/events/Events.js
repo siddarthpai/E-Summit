@@ -16,6 +16,7 @@ export default function Events() {
       link: "https://www.google.com/",
       venue: "venue",
       cost: "Free",
+      index: 0,
     },
     {
       id: 2,
@@ -29,6 +30,7 @@ export default function Events() {
       link: "https://www.google.com/",
       venue: "venue",
       cost: "Free",
+      index: 1,
     },
     {
       id: 3,
@@ -42,6 +44,7 @@ export default function Events() {
       link: "https://www.google.com/",
       venue: "venue",
       cost: "Free",
+      index: 2,
     },
     {
       id: 4,
@@ -55,6 +58,7 @@ export default function Events() {
       link: "https://www.google.com/",
       venue: "venue",
       cost: "Free",
+      index: 3,
     },
     {
       id: 5,
@@ -66,8 +70,10 @@ export default function Events() {
       POC: "Aditya and Lalith",
       time: "11:00 AM - 4:00 PM",
       link: "https://www.google.com/",
-      venue: "PES Ring Road Campus",
+      venue: "Venue: PES Ring Road Campus",
       cost: "Paid",
+      price: "Registration Fee: ₹300",
+      index: 4,
     },
     {
       id: 6,
@@ -79,8 +85,10 @@ export default function Events() {
       POC: "Ananya and Kaashika",
       time: "5:00 PM - 9:00 AM ",
       link: "https://www.google.com/",
-      venue: "PES Electronic City Campus",
+      venue: "Venue: PES Electronic City Campus",
       cost: "Paid",
+      price: "Registration Fee: ₹300",
+      index: 5,
     },
   ];
   return (
