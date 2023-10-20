@@ -5,7 +5,7 @@ import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 
 export default function Navbar() {
   const [isNavOpen, setIsNavOpen] = useState(false);
-  const [isLightBackground, setIsLightBackground] = useState(true); // Added state for background color
+  const [isLightBackground, setIsLightBackground] = useState(true);
 
   const handleToggleNav = () => {
     setIsNavOpen((prev) => !prev);
@@ -42,32 +42,29 @@ export default function Navbar() {
           isLightBackground ? "light-bg" : "dark-bg"
         }`}
       >
-        <div className="absolute left-0 mb-16 mr-16 mt-16 ml-4 lg:ml-16">
-          <div className="grid grid-cols-3 gap-2">
-            <div className="flex items-center space-x-2  lg:space-x-6">
-            <div className="flex flex-col items-center lg:flex-row lg:items-center space-y-2 lg:space-y-0 lg:space-x-6">
-            <img
-    src="/pes.png"
-    className="w-32 h-auto lg:w-48 lg:h-auto"
-    priority
-    alt="Pes"
-  />
-  <img
-    src="/ecell.png"
-    className="w-12 h-auto sm:w-16 sm:h-auto lg:w-20 lg:h-auto"
-    priority
-    alt="Ecell"
-  />
-  <img
-    src="/eclub.png"
-    className="w-12 h-auto sm:w-16 sm:h-auto lg:w-20 lg:h-auto"
-    priority
-    alt="Eclub"
-  />
-</div>
-
-
-
+        <div className="absolute left-0 mb-16 mr-16 mt-16 lg:ml-8">
+          <div className="grid grid-cols-3 gap-4">
+            <div className="flex items-center space-x-2 lg:space-x-6">
+              <div className="flex flex-col items-center lg:flex-row lg:items-center space-y-5 lg:space-y-0 lg:space-x-7">
+                <img
+                  src="/pes.png"
+                  className="ml-4 lg:mt-4 w-24 h-16 lg:w-44 lg:h-auto"
+                  priority
+                  alt="Pes"
+                />
+                <img
+                  src="/ecell.png"
+                  className="w-12 h-auto lg:w-20 lg:h-auto"
+                  priority
+                  alt="Ecell"
+                />
+                <img
+                  src="/eclub.png"
+                  className="w-12 h-auto lg:w-20 lg:h-auto"
+                  priority
+                  alt="Eclub"
+                />
+              </div>
             </div>
           </div>
         </div>
