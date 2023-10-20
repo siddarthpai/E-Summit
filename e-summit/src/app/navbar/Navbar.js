@@ -46,12 +46,12 @@ export default function Navbar() {
           <div className="grid grid-cols-3 gap-4">
             <div className="flex items-center space-x-2 lg:space-x-6">
               <div className="flex flex-col items-center lg:flex-row lg:items-center space-y-5 lg:space-y-0 lg:space-x-7">
-                <img
+                {/* <img
                   src="/pes.png"
                   className="ml-4 lg:mt-4 w-24 h-16 lg:w-44 lg:h-auto"
                   priority
                   alt="Pes"
-                />
+                /> */}
                 <img
                   src="/ecell.png"
                   className="w-12 h-auto lg:w-20 lg:h-auto"

@@ -1,4 +1,6 @@
 "use client";
+
+import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 import { Poppins } from "next/font/google";
 import Splash from "./splashscreen/Spashscreen";
