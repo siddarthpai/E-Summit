@@ -42,9 +42,9 @@ export default function Navbar() {
           isLightBackground ? "light-bg" : "dark-bg"
         }`}
       >
-        <div className="absolute left-0 m-16">
+        <div className="absolute left-0 mb-16 mr-16 mt-16 ml-4 lg:ml-16">
           <div className="grid grid-cols-3 gap-2">
-            <div className="flex items-center space-x-2 sm:space-x-4 lg:space-x-6">
+            <div className="flex items-center space-x-2  lg:space-x-6">
               <img
                 src="/ecell.png"
                 className="w-12 h-16 sm:w-16 sm:h-20 lg:w-20 lg:h-24"
@@ -52,16 +52,17 @@ export default function Navbar() {
                 height="80"
                 priority
               />
+
               <img
-                src="/cross.png"
-                className="w-14 h-10 sm:w-16 sm:h-12 lg:w-20 lg:h-16"
+                src="/eclub.png"
+                className="w-14 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20"
                 width="80"
                 height="80"
                 priority
               />
               <img
-                src="/eclub.png"
-                className="w-14 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20"
+                src="/pes.png"
+                className="w-52 h-full ml-32  lg:w-52 lg:h-28 lg:ml-8 lg:mt-2"
                 width="80"
                 height="80"
                 priority
