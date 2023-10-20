@@ -135,11 +135,11 @@ const Card = ({
               {content}
             </p>
             <div className="grid grid-rows-4 gap-5 text-lg lg:text-2xl mt-5 font-bold">
-              <p style={{ color: "#958EE8" }}>Date: {date}</p>
-              <p style={{ color: "#958EE8" }}>Time: {time}</p>
-              <p style={{ color: "#958EE8" }}>{size}</p>
-              <p style={{ color: "#d9493f" }}>{venue}</p>
-              <p style={{ color: "#d9493f" }}>{price}</p>
+              <p style={{ color: "#fffff" }}>Date: {date}</p>
+              <p style={{ color: "#fffff" }}>Time: {time}</p>
+              <p style={{ color: "#fffff" }}>{size}</p>
+              <p style={{ color: "#fffff" }}>{venue}</p>
+              <p style={{ color: "#fffff" }}>{price}</p>
               {/* <p style={{ color: "#958EE8" }}>{venue}</p> */}
 
               <a className="font-bold text-xl lg:text-2xl " href={link}>
