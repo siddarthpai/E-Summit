@@ -144,10 +144,6 @@ const Card = ({
               <p style={{ color: "#fffff" }}>{venue}</p>
               <p style={{ color: "#fffff" }}>{price}</p>
               {/* <p style={{ color: "#958EE8" }}>{venue}</p> */}
-
-              <a className="font-bold text-xl lg:text-2xl " href={link}>
-                <u>Register here </u>
-              </a>
             </div>
           </div>
         </DialogContent>
@@ -163,7 +159,7 @@ const Card = ({
               onClick={handleToClose}
               className="absolute bottom-4 left-4 right-4 z-20 rounded border-2 border-white bg-white py-2 text-center font-mono font-black uppercase text-neutral-800 backdrop-blur transition-colors hover:bg-white/30 hover:text-white"
             >
-              Close X
+              Close
             </button>
           </div>
         </DialogActions>
