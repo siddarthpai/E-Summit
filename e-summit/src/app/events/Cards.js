@@ -147,7 +147,7 @@ const Card = ({
             </div>
           </div>
         </DialogContent>
-        <DialogActions style={{ padding: "32px 32px" }}>
+        <DialogActions style={{ padding: "64px 64px" }}>
           <div>
             <button
               onClick={handleRegisterClick}
