@@ -42,25 +42,25 @@ export default function Navbar() {
           isLightBackground ? "light-bg" : "dark-bg"
         }`}
       >
-        <div className="absolute left-0 mb-16 mr-16 mt-16 lg:ml-8">
+        <div className="absolute left-0 mb-16 mr-16 mt-5 lg:ml-8">
           <div className="grid grid-cols-3 gap-4">
             <div className="flex items-center space-x-2 lg:space-x-6">
-              <div className="flex flex-col items-center lg:flex-row lg:items-center space-y-5 lg:space-y-0 lg:space-x-7">
-                {<img
+              <div className="flex flex-col items-center lg:flex-row lg:items-center lg:space-y-0 lg:space-x-7">
+                <img
                   src="/pes.png"
                   className="ml-4 lg:mt-4 w-24 h-16 lg:w-44 lg:h-auto"
                   priority
                   alt="Pes"
-                /> }
+                />
                 <img
                   src="/ecell.png"
-                  className="w-12 h-auto lg:w-20 lg:h-auto"
+                  className=" ml-6 mt-0 w-12 lg:w-20 h-auto lg:h-auto"
                   priority
                   alt="Ecell"
                 />
                 <img
                   src="/eclub.png"
-                  className="w-12 h-auto lg:w-20 lg:h-auto"
+                  className=" ml-6 mt-3 w-12 h-auto lg:w-20 lg:h-auto"
                   priority
                   alt="Eclub"
                 />
@@ -75,7 +75,7 @@ export default function Navbar() {
           <nav>
             <section className="MOBILE-MENU flex">
               <div
-                className={`HAMBURGER-ICON space-y-2 fixed right-0 mr-2 mt-20 lg:mr-24 lg:mt-24 z-50  
+                className={`HAMBURGER-ICON space-y-2 fixed right-0 mr-4 mt-8 lg:mr-24 lg:mt-24 z-50  
                 }`}
                 onClick={handleToggleNav}
               >
