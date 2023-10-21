@@ -10,13 +10,13 @@ export default function contactUs() {
     campus: "RR Campus",
 
     name1: "Shrishti A",
-    phoneno1: "96064 00805",
+    phoneno1: " 96064 00805",
     phonelink1: "tel:+919606400805",
     emailID1: "shrish.tea.a@gmail.com   ",
     emailIDlink1: "mailto:shrish.tea.a@gmail.com",
 
     name2: "Samarth S Rao",
-    phoneno2: "77384 20872",
+    phoneno2: " 77384 20872",
     phonelink2: "tel:+917738420872",
     emailID2: "samarthraaoo@gmail.com",
     emailIDlink2: "mailto:samarthraaoo@gmail.com",
@@ -27,13 +27,13 @@ export default function contactUs() {
     campus: "EC Campus",
 
     name1: "Deepika Indran",
-    phoneno1: "85530 30046",
+    phoneno1: " 85530 30046",
     phonelink1: "tel:+9185530 30046",
     emailID1: "deepikaindran@gmail.com",
     emailIDlink1: "mailto:deepikaindran@gmail.com",
 
     name2: "Sampann Raheja",
-    phoneno2: "91087 90891",
+    phoneno2: " 91087 90891",
     phonelink2: "tel:+919108790891",
     emailID2: "sampann2002@gmail.com",
     emailIDlink2: "mailto:sampann2002@gmail.com",

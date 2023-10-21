@@ -57,7 +57,7 @@ export default function landing() {
                   href="https://www.instagram.com/entrepreneurshipclub.pes/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-2 mb-5"
+                  className="mt-3 mb-3"
                 >
                   E-Club
                 </a>
@@ -75,7 +75,7 @@ export default function landing() {
         <div id="linkedin">
           <Zoom top left opposite cascade>
             <div onClick={handleLinkedInClick}>
-              <AiOutlineLinkedin size={45} />
+              <AiOutlineLinkedin size={44} />
             </div>
           </Zoom>
           {showLinkedInLinks && (
@@ -83,7 +83,7 @@ export default function landing() {
               <div className="flex flex-col font-bold ">
                 <a
                   href="https://www.linkedin.com/company/the-entrepreneurship-club-of-pes-university/"
-                  className="mt-2 mb-5"
+                  className="mt-2 mb-3"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
