@@ -1,4 +1,6 @@
 import { motion } from "framer-motion";
+import { FaPhone } from 'react-icons/fa';
+import { FaEnvelope } from 'react-icons/fa';
 
 import Zoom from "react-reveal/Zoom";
 
@@ -15,7 +17,7 @@ export const ContactCard = ({ cardData }) => {
           scale: 1.05,
         },
       }}
-      className="relative h-30 w-100 shrink-0 overflow-hidden rounded-xl  p-8"
+      className="relative h-30 w-80 shrink-0 overflow-hidden rounded-xl  p-8"
       style={{ backgroundColor: "#00214c" }}
     >
       <motion.span
@@ -35,20 +37,24 @@ export const ContactCard = ({ cardData }) => {
       </motion.span>
       <div className="relative z-10 text-white mt-5 mb-5">
         <p className="text-xl">{cardData.name1}</p>
-        <p>
-          <a href={cardData.phonelink1}>Phone: {cardData.phoneno1}</a>
+        <p className="flex gap-2">
+          <FaPhone style={{ transform: 'rotate(90deg)', marginTop: '3px' }} />
+          <a href={cardData.phonelink1}> {cardData.phoneno1}</a>
         </p>
-        <p>
-          <a href={cardData.emailIDlink1}>Email: {cardData.emailID1}</a>
+        <p className="flex gap-2">
+          <FaEnvelope style = {{marginTop: '4px'}}/>
+          <a href={cardData.emailIDlink1}>{cardData.emailID1}</a>
         </p>
       </div>
       <div className="relative z-10 text-white">
         <p className="text-xl">{cardData.name2}</p>
-        <p>
-          <a href={cardData.phonelink2}>Phone: {cardData.phoneno2}</a>
+        <p className="flex gap-2">
+          <FaPhone style={{ transform: 'rotate(90deg)', marginTop: '3px' }} />
+          <a href={cardData.phonelink2}>{cardData.phoneno2}</a>
         </p>
-        <p>
-          <a href={cardData.emailIDlink2}>Email: {cardData.emailID2}</a>
+        <p className="flex gap-2">
+          <FaEnvelope style = {{marginTop: '4px'}}/>
+          <a href={cardData.emailIDlink2}>{cardData.emailID2}</a>
         </p>
       </div>
       <Background />
