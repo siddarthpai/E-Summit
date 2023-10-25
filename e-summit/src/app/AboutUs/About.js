@@ -10,7 +10,7 @@ const squada = Squada_One({ subsets: ["latin"], weight: "400" });
 
 export default function About() {
   const myStyle = {
-    backgroundImage: "url('/invertedbg.jpeg')",
+    backgroundImage: "url('/background copy.jpg')",
     backgroundSize: "100% 100%",
     backgroundRepeat: "no-repeat",
   };
