@@ -107,7 +107,7 @@ export const VisitCard = ({ cardData }) => {
       </div>
       <div className="relative z-10 text-white mt-5 mb-5">
         <a
-          href={cardData.loclink1}
+          href={cardData.loclink2}
           className="text-xl"
           target="_blank"
           rel="noopener noreferrer"
