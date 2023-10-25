@@ -48,7 +48,7 @@ export default function About() {
                 </div>
 
                 <button
-                  className="relative top-2/3 left-1/4 lg:left-2/3 right- border-2 border-black p-2 rounded-md bg-gray-400 text-black lg:p-5 w-fit h-fit "
+                  className="relative top-2/3 left-1/4 lg:left-2/3 right- border-2 border-black p-2 rounded-md bg-white text-black lg:p-5 w-fit h-fit "
                   onClick={handleClickOpen}
                 >
                   Read More
@@ -59,7 +59,7 @@ export default function About() {
                   <div className="mt-16 mb-16 lg:mt-32 lg:mb-32">
                     <h1 className="text-5xl">Workshops</h1>
                     <button
-                      className="border-2 border-black p-2 rounded-md bg-gray-400 text-black lg:p-5"
+                      className="border-2 border-black p-2 rounded-md bg-white text-black lg:p-5"
                       onClick={handleExploreClick}
                     >
                       Explore
@@ -70,7 +70,7 @@ export default function About() {
                   <div className="mt-16 lg:mt-32 lg:mb-32">
                     <h1 className="text-5xl">Speaker Sessions</h1>
                     <button
-                      className="border-2 border-black p-2 rounded-md bg-gray-400 text-black lg:p-5"
+                      className="border-2 border-black p-2 rounded-md bg-white text-black lg:p-5"
                       onClick={handleExploreClick}
                     >
                       Explore
