@@ -2,6 +2,7 @@
 
 import React from "react";
 import { Dialog, DialogContent, DialogActions } from "@material-ui/core";
+import { Slide } from "react-reveal";
 import { useState } from "react";
 import "./style.css";
 import { Squada_One } from "next/font/google";
@@ -38,44 +39,46 @@ export default function About() {
       <div className={`h-screen text-white ${squada.className}`}>
         <div className="flex flex-box justify-center align-center text-center">
           <div className="m-16 lg:m-32 grid grid-rows-3 h-screen w-full">
-            <div className="rounded-lg grid grid-cols-2 bg-purple-800 h-5/6 ">
-              <div className="flex items-center justify-center">
-                <h1 className="text-5xl lg:text-7xl align-middle">
-                  About <br /> Us
-                </h1>
-              </div>
+            <Slide left cascade>
+              <div className="rounded-lg grid grid-cols-2 bg-purple-800 h-5/6 ">
+                <div className="flex items-center justify-center">
+                  <h1 className="text-5xl lg:text-7xl align-middle">
+                    About <br /> Us
+                  </h1>
+                </div>
 
-              <button
-                className="relative top-2/3 left-1/4 lg:left-2/3 right- border-2 border-black p-2 rounded-md bg-gray-400 text-black lg:p-5 w-fit h-fit "
-                onClick={handleClickOpen}
-              >
-                Read More
-              </button>
-            </div>
-            <div className="grid gap-16mt-32 lg:grid lg:grid-cols-2">
-              <div className="bg-transperant w">
-                <div className="mt-16 mb-16 lg:mt-32 lg:mb-32">
-                  <h1 className="text-5xl">Workshops</h1>
-                  <button
-                    className="border-2 border-black p-2 rounded-md bg-gray-400 text-black lg:p-5"
-                    onClick={handleExploreClick}
-                  >
-                    Explore
-                  </button>
+                <button
+                  className="relative top-2/3 left-1/4 lg:left-2/3 right- border-2 border-black p-2 rounded-md bg-gray-400 text-black lg:p-5 w-fit h-fit "
+                  onClick={handleClickOpen}
+                >
+                  Read More
+                </button>
+              </div>
+              <div className="grid gap-16mt-32 lg:grid lg:grid-cols-2">
+                <div className="bg-transperant w">
+                  <div className="mt-16 mb-16 lg:mt-32 lg:mb-32">
+                    <h1 className="text-5xl">Workshops</h1>
+                    <button
+                      className="border-2 border-black p-2 rounded-md bg-gray-400 text-black lg:p-5"
+                      onClick={handleExploreClick}
+                    >
+                      Explore
+                    </button>
+                  </div>
+                </div>
+                <div className="bg-transperant w">
+                  <div className="mt-16 lg:mt-32 lg:mb-32">
+                    <h1 className="text-5xl">Speaker Sessions</h1>
+                    <button
+                      className="border-2 border-black p-2 rounded-md bg-gray-400 text-black lg:p-5"
+                      onClick={handleExploreClick}
+                    >
+                      Explore
+                    </button>
+                  </div>
                 </div>
               </div>
-              <div className="bg-transperant w">
-                <div className="mt-16 lg:mt-32 lg:mb-32">
-                  <h1 className="text-5xl">Speaker Sessions</h1>
-                  <button
-                    className="border-2 border-black p-2 rounded-md bg-gray-400 text-black lg:p-5"
-                    onClick={handleExploreClick}
-                  >
-                    Explore
-                  </button>
-                </div>
-              </div>
-            </div>
+            </Slide>
           </div>
         </div>
         <Dialog
