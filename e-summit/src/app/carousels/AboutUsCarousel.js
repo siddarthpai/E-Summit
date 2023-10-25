@@ -1,20 +1,20 @@
-'use client';
+"use client";
 
-import { Carousel } from 'flowbite-react';
-import About from '../About';
-import { Fade, Rotate, Zoom } from 'react-reveal';
+import { Carousel } from "flowbite-react";
+import About from "../AboutUs/About";
+import { Fade, Rotate, Zoom } from "react-reveal";
 
 export default function CardCarousel() {
   const aboutSectionBackground1 = {
     backgroundImage: "url('/background copy.jpg')",
-    backgroundSize: '100% 100%',
-    backgroundRepeat: 'no-repeat',
+    backgroundSize: "100% 100%",
+    backgroundRepeat: "no-repeat",
   };
 
   const aboutSectionBackground2 = {
     backgroundImage: "url('/background.jpg')",
-    backgroundSize: '100% 100%',
-    backgroundRepeat: 'no-repeat',
+    backgroundSize: "100% 100%",
+    backgroundRepeat: "no-repeat",
   };
 
   return (
