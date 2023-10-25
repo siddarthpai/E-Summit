@@ -8,3 +8,15 @@
 #Dialog-box .font-mono {
   font-family: "Poppins", sans-serif; /* Apply Poppins font */
 }
+
+
+h1.text-5xl {
+  font-size: 3rem; 
+}
+
+
+@media (max-width: 768px) {
+  h1.text-5xl {
+    font-size: 2rem; 
+  }
+}
