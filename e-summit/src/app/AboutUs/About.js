@@ -40,7 +40,10 @@ export default function About() {
         <div className="flex flex-box justify-center align-center text-center">
           <div className="m-16 lg:m-32 grid grid-rows-3 h-screen w-full">
             <Slide left cascade>
-              <div className="rounded-lg grid grid-cols-2 bg-purple-800 h-5/6 ">
+              <div
+                className="rounded-lg grid grid-cols-2 h-5/6 "
+                style={{ backgroundColor: "#958EE8" }}
+              >
                 <div className="flex items-center justify-center">
                   <h1 className="text-5xl lg:text-7xl align-middle">
                     About <br /> Us
