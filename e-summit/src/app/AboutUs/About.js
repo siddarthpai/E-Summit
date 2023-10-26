@@ -57,7 +57,7 @@ export default function About() {
               <div className="rounded-lg grid grid-cols-2 bg-purple-800 h-5/6 ">
                 <div className="flex items-center justify-center">
                   <h1 className="text-5xl lg:text-7xl align-middle">
-                   Workshop's
+                    Workshop's
                   </h1>
                 </div>
 
@@ -65,14 +65,15 @@ export default function About() {
                   className="relative top-2/3 left-1/4 lg:left-2/3 right- border-2 border-black p-2 rounded-md bg-white text-black lg:p-5 w-fit h-fit "
                   onClick={handleExploreClick}
                 >
-                 Explore
+                  Explore
                 </button>
               </div>
 
-<div className="rounded-lg grid grid-cols-2 bg-purple-800 h-5/6 ">
+              <div className="rounded-lg grid grid-cols-2 bg-purple-800 h-5/6 ">
                 <div className="flex items-center justify-center">
                   <h1 className="text-5xl lg:text-7xl align-middle">
-                   Speaker's <br/>Session
+                    Speaker's <br />
+                    Session
                   </h1>
                 </div>
 
