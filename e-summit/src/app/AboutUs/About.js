@@ -36,7 +36,7 @@ export default function About() {
 
   return (
     <div style={myStyle} className="bg-fixed">
-      <div className={`h-screen text-white ${squada.className}`}>
+      <div className={`h-fit lg:h-screen text-white ${squada.className}`}>
         <div className="flex flex-box justify-center align-center text-center">
           <div className="m-16 lg:m-32 grid grid-rows-3 h-screen w-full">
             <Slide left cascade>
@@ -45,7 +45,7 @@ export default function About() {
                 style={{ backgroundColor: "#958EE8" }}
               >
                 <div className="flex items-center justify-center">
-                  <h1 className="text-7xl lg:text-7xl align-middle">
+                  <h1 className="text-7xl lg:text-7xl align-middle m-5">
                     About <br /> Us
                   </h1>
                 </div>
@@ -59,24 +59,21 @@ export default function About() {
               </div>
               <div className="grid gap-16mt-32 lg:grid lg:grid-cols-2 space-y-4 lg:space-y-0 lg:space-x-4">
                 <div style={{ backgroundColor: "#958EE8" }}>
-                   
                   <div className="mt-8 mb-10 lg:mt-18 lg:mb-18">
                     <h1 className="text-7xl">Workshops</h1>
                     <button
-                      className="border-2 border-black p-2 rounded-md bg-white text-black lg:p-5"
+                      className="mt-16 border-2 border-black p-2 rounded-md bg-white text-black lg:p-5"
                       onClick={handleExploreClick}
                     >
                       Explore
                     </button>
                   </div>
                 </div>
-                <div
-                style={{ backgroundColor: "#958EE8" }}
-              >
+                <div style={{ backgroundColor: "#958EE8" }}>
                   <div className="mt-8 lg:mt-18 lg:mb-18">
                     <h1 className="text-7xl">Speaker Sessions</h1>
                     <button
-                      className="border-2 border-black p-2 rounded-md bg-white text-black lg:p-5"
+                      className="mt-2 mb-2  border-2 border-black p-2 rounded-md bg-white text-black lg:p-5"
                       onClick={handleExploreClick}
                     >
                       Explore
