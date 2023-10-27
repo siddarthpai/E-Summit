@@ -105,41 +105,41 @@ export default function Navbar() {
                   </svg>
                 </div>
                 <ul className="MENU-LINK-MOBILE-OPEN flex flex-col items-center justify-between min-h-[250px]">
-                  <li className="border-b border-gray-400 my-8 uppercase">
+                  <li className="uppercase relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] before:bottom-0 before:left-0 before:bg-black before:hover:scale-x-100 before:scale-x-0 before:origin-top-left before:transition before:ease-in-out before:duration-300">
                     <ScrollLink
                       to="aboutus"
                       smooth={true}
                       duration={500}
                       onClick={handleCloseMenu}
                     >
-                      About Us
+                      <a href="">About Us</a>
                     </ScrollLink>
                   </li>
-                  <li className="border-b border-gray-400 my-8 uppercase">
+                  <li className="uppercase relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] before:bottom-0 before:left-0 before:bg-black before:hover:scale-x-100 before:scale-x-0 before:origin-top-left before:transition before:ease-in-out before:duration-300">
                     <ScrollLink
                       to="events"
                       smooth={true}
                       duration={500}
                       onClick={handleCloseMenu}
                     >
-                      Events
+                      <a href=""> Events</a>
                     </ScrollLink>
                   </li>
                   <li
-                    className="border-b border-gray-400 my-8 uppercase"
+                    className="uppercase relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] before:bottom-0 before:left-0 before:bg-black before:hover:scale-x-100 before:scale-x-0 before:origin-top-left before:transition before:ease-in-out before:duration-300"
                     onClick={handleCloseMenu}
                   >
                     <a href="/history">History</a>
                   </li>
 
-                  <li className="border-b border-gray-400 my-8 uppercase">
+                  <li className="uppercase relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] before:bottom-0 before:left-0 before:bg-black before:hover:scale-x-100 before:scale-x-0 before:origin-top-left before:transition before:ease-in-out before:duration-300">
                     <ScrollLink
                       to="contact"
                       smooth={true}
                       duration={500}
                       onClick={handleCloseMenu}
                     >
-                      Contact Us
+                      <a href="">Contact Us</a>
                     </ScrollLink>
                   </li>
                 </ul>

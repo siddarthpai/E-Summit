@@ -45,7 +45,7 @@ export default function About() {
                 style={{ backgroundColor: "#958EE8" }}
               >
                 <div className="flex items-center justify-center">
-                  <h1 className="text-7xl lg:text-7xl align-middle m-5">
+                  <h1 className="text-7xl lg:text-7xl align-middle m-5 ">
                     About <br /> Us
                   </h1>
                 </div>

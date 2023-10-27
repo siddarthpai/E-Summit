@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import { FaPhone } from 'react-icons/fa';
-import { FaEnvelope } from 'react-icons/fa';
+import { FaPhone } from "react-icons/fa";
+import { FaEnvelope } from "react-icons/fa";
 
 import Zoom from "react-reveal/Zoom";
 
@@ -38,23 +38,32 @@ export const ContactCard = ({ cardData }) => {
       <div className="relative z-10 text-white mt-5 mb-5">
         <p className="text-xl">{cardData.name1}</p>
         <p className="flex gap-2">
-          <FaPhone style={{ transform: 'rotate(90deg)', marginTop: '3px' }} />
-          <a href={cardData.phonelink1}> {cardData.phoneno1}</a>
+          <FaPhone style={{ transform: "rotate(90deg)", marginTop: "3px" }} />
+          <a className="hover:underline" href={cardData.phonelink1}>
+            {" "}
+            {cardData.phoneno1}
+          </a>
         </p>
         <p className="flex gap-2">
-          <FaEnvelope style = {{marginTop: '4px'}}/>
-          <a href={cardData.emailIDlink1}>{cardData.emailID1}</a>
+          <FaEnvelope style={{ marginTop: "4px" }} />
+          <a className="hover:underline" href={cardData.emailIDlink1}>
+            {cardData.emailID1}
+          </a>
         </p>
       </div>
       <div className="relative z-10 text-white">
         <p className="text-xl">{cardData.name2}</p>
         <p className="flex gap-2">
-          <FaPhone style={{ transform: 'rotate(90deg)', marginTop: '3px' }} />
-          <a href={cardData.phonelink2}>{cardData.phoneno2}</a>
+          <FaPhone style={{ transform: "rotate(90deg)", marginTop: "3px" }} />
+          <a className="hover:underline" href={cardData.phonelink2}>
+            {cardData.phoneno2}
+          </a>
         </p>
         <p className="flex gap-2">
-          <FaEnvelope style = {{marginTop: '4px'}}/>
-          <a href={cardData.emailIDlink2}>{cardData.emailID2}</a>
+          <FaEnvelope style={{ marginTop: "4px" }} />
+          <a className="hover:underline" href={cardData.emailIDlink2}>
+            {cardData.emailID2}
+          </a>
         </p>
       </div>
       <Background />
@@ -96,7 +105,7 @@ export const VisitCard = ({ cardData }) => {
       <div className="relative z-10 text-white mt-5 mb-5">
         <a
           href={cardData.loclink1}
-          className="text-xl"
+          className="text-xl hover:underline"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -108,7 +117,7 @@ export const VisitCard = ({ cardData }) => {
       <div className="relative z-10 text-white mt-5 mb-5">
         <a
           href={cardData.loclink2}
-          className="text-xl"
+          className="text-xl hover:underline"
           target="_blank"
           rel="noopener noreferrer"
         >

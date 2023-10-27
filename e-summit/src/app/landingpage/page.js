@@ -42,12 +42,12 @@ export default function landing() {
       <div
         id="socials"
         // className="left-0 text-white ml-8 gap-3 absolute bottom-0 lg:bottom-28 grid-rows-2 " // desktop only
-        className="onlySmall:left-1/4 left-0 text-white ml-8 onlySmall:gap-7 gap-3 absolute bottom-0 lg:bottom-28 onlySmall:grid onlySmall:grid-cols-2 lg:grid-rows-2 "
+        className="onlySmall:left-1/4 left-0 text-white ml-8 onlySmall:gap-7 gap-3 absolute bottom-0 lg:bottom-8 onlySmall:grid onlySmall:grid-cols-2 lg:grid-rows-2 "
       >
         <div id="insta" className="mb-5">
           <Zoom top left opposite cascade>
             <div onClick={handleInstaClick}>
-              <BsInstagram size={40} />
+              <BsInstagram size={40} className="hover:text-blue-900" />
             </div>
           </Zoom>
           {showInstaLinks && (
@@ -75,7 +75,7 @@ export default function landing() {
         <div id="linkedin">
           <Zoom top left opposite cascade>
             <div onClick={handleLinkedInClick}>
-              <AiOutlineLinkedin size={44} />
+              <AiOutlineLinkedin size={44} className="hover:text-blue-900" />
             </div>
           </Zoom>
           {showLinkedInLinks && (
