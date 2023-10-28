@@ -45,12 +45,18 @@ export default function Navbar() {
         <div className="absolute left-0 mb-16 mr-16 mt-5 lg:ml-8">
           <div className="grid grid-cols-3 gap-4">
             <div className="flex items-center space-x-2 lg:space-x-6">
-              <div className="flex flex-col items-center lg:flex-row lg:items-center lg:space-y-0 lg:space-x-7">
+              <div className="flex flex-col items-center lg:flex-row lg:items-center lg:space-y-0 lg:space-x-5">
                 <img
                   src="/pes.png"
-                  className="ml-4 lg:mt-4 w-24 h-16 lg:w-44 lg:h-auto"
+                  className="ml-4 lg:mt-0 w-24 h-16 lg:w-44 lg:h-auto"
                   priority
                   alt="Pes"
+                />
+                <img
+                  src="/CIE.png"
+                  className="ml-6 lg:mt-4 w-24 h-18 lg:w-44 lg:h-auto"
+                  priority
+                  alt="CIE"
                 />
                 <img
                   src="/ecell.png"
