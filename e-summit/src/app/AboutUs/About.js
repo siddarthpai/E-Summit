@@ -50,13 +50,13 @@ export default function About() {
                 style={{ backgroundColor: "#958EE8" }}
               >
                 <div className="flex items-center justify-center">
-                  <h1 className="text-7xl lg:text-7xl align-middle m-5 ">
+                  <h1 className="text-5xl lg:text-7xl align-middle m-5 ">
                     About <br /> Us
                   </h1>
                 </div>
 
                 <button
-                  className="relative top-2/3 left-1/4 lg:left-2/3 right- border-2 border-black p-2 rounded-md bg-white text-black lg:p-5 w-fit h-fit "
+                  className="relative top-1/3 left-1/4 lg:left-2/3 right- border-2 border-black p-2 rounded-md bg-white text-black lg:p-5 w-fit h-fit "
                   onClick={handleClickOpen}
                 >
                   Read More
@@ -65,7 +65,7 @@ export default function About() {
               <div className="grid gap-16mt-32 lg:grid lg:grid-cols-2 space-y-4 lg:space-y-0 lg:space-x-4">
                 <div style={{ backgroundColor: "#958EE8" }}>
                   <div className="mt-8 mb-10 lg:mt-18 lg:mb-18">
-                    <h1 className="text-7xl">Panel Discussion</h1>
+                    <h1 className="text-5xl lg:text-7xl">Panel Discussion</h1>
                     <button
                       className="mt-16 border-2 border-black p-2 rounded-md bg-white text-black lg:p-5"
                       onClick={() => handleExploreClick("panelist")}
@@ -75,8 +75,8 @@ export default function About() {
                   </div>
                 </div>
                 <div style={{ backgroundColor: "#958EE8" }}>
-                  <div className="mt-8 lg:mt-18 lg:mb-18">
-                    <h1 className="text-7xl">Speaker Sessions</h1>
+                  <div className="mt-8 mb-10 lg:mt-18 lg:mb-18">
+                    <h1 className="text-5xl lg:text-7xl">Speaker Sessions</h1>
                     <button
                       className="mt-16  border-2 border-black p-2 rounded-md bg-white text-black lg:p-5"
                       onClick={() => handleExploreClick("speaker")}
